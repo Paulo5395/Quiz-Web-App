@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -28,13 +33,13 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
+}
   
-  li {
+li {
     float: left;
-  }
+}
   
-  li a {
+li a {
     font-family: "Merriweather", serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -43,11 +48,33 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
-  li a:hover {
+li a:hover {
     background-color: #111;
-  }
+}
+
+div.toTopButton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    cursor: pointer;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+div.toTopButton:hover {
+    background-color: #111;
+}
 
 .question {
 	margin-top: 30px;
@@ -66,4 +93,11 @@ ul {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-size: 48px;
+}
+
+#unitNavBar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 53%;
 }
