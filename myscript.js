@@ -19,3 +19,9 @@ $(document).ready(function() {
         $("#a5").slideToggle("slow");
 	});
 });
+
+$(window).on('load', function() {
+	$('div').fadeIn("fast");
+	$('p').fadeIn("fast");
+	$('h1').fadeIn("fast");
+});
